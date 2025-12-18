@@ -1,2 +1,11 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
+
+:root {
+    --light-orange: #ffecd6;
+}
+body {
+    background-color: var(--light-orange);
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+}
