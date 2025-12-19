@@ -4,6 +4,7 @@
 :root {
     --light-orange: #ffecd6;
 }
+
 body {
     background-color: var(--light-orange);
     font-family: Inter, sans-serif;
