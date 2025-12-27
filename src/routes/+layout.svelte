@@ -1,13 +1,15 @@
 <script lang="ts">
+	import type { ComponentProps } from 'svelte';
 	import './layout.css';
 	import favicon from '$lib/assets/hubert-favicon.png';
 	import NavBar from '$lib/components/NavBar.svelte';
 
 	const { children } = $props();
 
-	const navBarLinks = [
+	const navBarLinks: ComponentProps<typeof NavBar>['links'] = [
 		{ label: 'Home', route: '/' },
 		{ label: 'Tricks', route: '/tricks' },
+		{ label: 'Contacts', route: '/contacts' },
 	];
 </script>
 
@@ -19,4 +21,4 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 <NavBar links={navBarLinks} />
-{@render children()}
+<div class="flex flex-col items-center">{@render children()}</div>
