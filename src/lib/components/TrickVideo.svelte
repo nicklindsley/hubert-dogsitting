@@ -30,9 +30,11 @@
 			<p class="p-1">{video.handCue}</p>
 		{/if}
 	</div>
-	<div class="flex justify-center">
-		<video controls {width}>
-			<source src={video.url} />
-		</video>
-	</div>
+	{#if video.url}
+		<div class="flex justify-center">
+			<video controls {width} loop>
+				<source src={video.url} />
+			</video>
+		</div>
+	{/if}
 </div>
