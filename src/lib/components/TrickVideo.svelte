@@ -12,7 +12,7 @@
 		width?: number;
 	};
 
-	const { video, width = 200 }: TrickVideoProps = $props();
+	const { video, width }: TrickVideoProps = $props();
 </script>
 
 <div class="border-rounded m-2 flex flex-col gap-2 rounded-2xl border-2 p-2.5">
@@ -32,7 +32,7 @@
 	</div>
 	{#if video.url}
 		<div class="flex justify-center">
-			<video controls {width} loop>
+			<video class="rounded-xl" controls {width} loop>
 				<source src={video.url} />
 			</video>
 		</div>

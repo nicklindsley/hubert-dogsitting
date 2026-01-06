@@ -49,7 +49,7 @@
 			url: TrickVideos.crawl,
 		},
 		{
-			title: 'Spin',
+			title: 'Turn',
 			description: 'Spin in a circle',
 			verbalCue: 'Turn',
 			handCue: 'Make a clockwise circle above his head with your finger',
@@ -125,7 +125,7 @@
 </script>
 
 <div>
-	<div class="grid grid-cols-3 gap-5">
+	<div class="grid grid-cols-1 gap-1 sm:grid-cols-2 sm:gap-2 md:grid-cols-3 md:gap-3">
 		{#each trickVideos as video (video.title)}
 			<TrickVideo {video} />
 		{/each}

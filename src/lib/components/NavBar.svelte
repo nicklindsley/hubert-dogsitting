@@ -12,7 +12,7 @@
 	const { links = [] }: NavBarProps = $props();
 </script>
 
-<div class="sticky top-0 flex min-h-10 w-full flex-col items-center bg-orange-200">
+<div class="sticky top-0 z-50 flex min-h-10 w-full flex-col items-center bg-orange-200">
 	<h3>Hubert Dogsitting Guide</h3>
 	<div class="flex gap-5">
 		{#each links as link (link.label)}
