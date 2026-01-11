@@ -21,4 +21,6 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 <NavBar links={navBarLinks} />
-<div class="flex flex-col items-center">{@render children()}</div>
+<div class="flex flex-col items-center">
+	{@render children()}
+</div>

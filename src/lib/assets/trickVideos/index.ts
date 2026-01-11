@@ -29,5 +29,5 @@ export {
 	turn,
 	wait,
 	wave,
-	weave
+	weave,
 };
