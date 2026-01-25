@@ -3,14 +3,14 @@
 	type Contact = { name: string; phone: PhoneNumber; link?: string };
 
 	const contacts: Contact[] = [
-		{ name: 'Nick', phone: '920-264-6984' },
-		{ name: 'Michaela', phone: '920-530-7838' },
-		{ name: 'Penny McLeod', phone: '920-819-5517' },
-		{ name: 'Sue Lindsley', phone: '920-819-1768' },
+		{ name: "Nick", phone: "920-264-6984" },
+		{ name: "Michaela", phone: "920-530-7838" },
+		{ name: "Penny McLeod", phone: "920-819-5517" },
+		{ name: "Sue Lindsley", phone: "920-819-1768" },
 		{
-			name: 'Animal House (Vet)',
-			phone: '920-465-4629',
-			link: 'https://www.animalhousegreenbay.com/service/urgent-care-2/',
+			name: "Animal House (Vet)",
+			phone: "920-465-4629",
+			link: "https://www.animalhousegreenbay.com/service/urgent-care-2/",
 		},
 	];
 </script>

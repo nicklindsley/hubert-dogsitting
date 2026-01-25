@@ -1,7 +1,7 @@
-import adapter from '@sveltejs/adapter-static';
-import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import adapter from "@sveltejs/adapter-static";
+import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
 
-const baseUrl = '/hubert-dogsitting';
+const baseUrl = "/hubert-dogsitting";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -10,8 +10,8 @@ const config = {
 	preprocess: vitePreprocess(),
 	kit: {
 		adapter: adapter({
-			pages: 'build',
-			assets: 'build',
+			pages: "build",
+			assets: "build",
 		}),
 		paths: { base: baseUrl },
 	},

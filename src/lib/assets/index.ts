@@ -1,3 +1,3 @@
-import hubertSleeping from './hubert-sleeping.jpeg';
+import hubertSleeping from "./hubert-sleeping.jpeg";
 
 export { hubertSleeping };

@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { page } from '$app/state';
-	import { resolve } from '$app/paths';
-	import type { RouteId } from '$app/types';
+	import { page } from "$app/state";
+	import { resolve } from "$app/paths";
+	import type { RouteId } from "$app/types";
 
 	const currentRoute = $derived(page.route.id);
 
@@ -18,7 +18,7 @@
 		{#each links as link (link.label)}
 			<h6>
 				<a
-					class={`hover:underline ${currentRoute === link.route ? 'font-bold' : ''}`}
+					class={`hover:underline ${currentRoute === link.route ? "font-bold" : ""}`}
 					href={resolve(link.route)}
 				>
 					{link.label}
