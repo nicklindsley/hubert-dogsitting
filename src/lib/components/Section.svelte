@@ -10,8 +10,8 @@
 	const { title, items }: SectionProps = $props();
 </script>
 
-<div class="m-2 flex flex-col">
-	<h5 class="flex justify-center rounded-4xl border-2 px-4 py-2">{title}</h5>
+<div class="m-2 flex flex-col gap-2">
+	<h5 class="flex justify-center rounded-4xl border-2 px-4 py-2">{title.toUpperCase()}</h5>
 	<ul class="mx-8 flex list-disc flex-col">
 		{#each items as item, index (index)}
 			<li>
