@@ -68,12 +68,12 @@
 			handCue: "Hold your finger out horizontally",
 			url: TrickVideos.touch,
 		},
-		{
-			title: "Drop It",
-			description: "Drop a toy, bone, etc",
-			verbalCue: "Drop It",
-			handCue: "Hold a closed fist below his mouth",
-		},
+		// {
+		// 	title: "Drop It",
+		// 	description: "Drop a toy, bone, etc",
+		// 	verbalCue: "Drop It",
+		// 	handCue: "Hold a closed fist below his mouth",
+		// },
 		{
 			title: "Wait",
 			description: "Sit and wait without moving or following",
