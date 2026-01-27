@@ -1,10 +1,13 @@
 <script lang="ts">
 	type SectionProps = {
 		title: string;
-		items: {
-			content: string;
-			subItems?: string[];
-		}[];
+		items: (
+			| string
+			| {
+					content: string;
+					subItems?: string[];
+			  }
+		)[];
 	};
 
 	const { title, items }: SectionProps = $props();
@@ -15,14 +18,18 @@
 	<ul class="mx-8 flex list-disc flex-col">
 		{#each items as item, index (index)}
 			<li>
-				<!-- eslint-disable-next-line svelte/no-at-html-tags -->
-				{@html item.content}
-				{#if item.subItems?.length}
-					<ul class="mx-8 flex list-[circle] flex-col">
-						{#each item.subItems as subItem, subIndex (subIndex)}
-							<li>{subItem}</li>
-						{/each}
-					</ul>
+				{#if typeof item === "string"}
+					{item}
+				{:else}
+					<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+					{@html item.content}
+					{#if item.subItems?.length}
+						<ul class="mx-8 flex list-[circle] flex-col">
+							{#each item.subItems as subItem, subIndex (subIndex)}
+								<li>{subItem}</li>
+							{/each}
+						</ul>
+					{/if}
 				{/if}
 			</li>
 		{/each}

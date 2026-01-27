@@ -6,7 +6,8 @@
 	const events: Event[] = [
 		{
 			time: "7 - 8 AM",
-			description: "Wake up and take him potty. He usually won't get up until you get up.",
+			description:
+				"Wake up and take him potty. He usually won't get up until you get up. He will typically poop in the morning but not always.",
 		},
 		{ time: "8 AM", description: "Playtime. He'll have a burst of energy after going potty." },
 		{
@@ -26,7 +27,11 @@
 			description:
 				"Limit his water so he doesn't have to get up in the middle of the night. A little water is fine, but no big drinks",
 		},
-		{ time: "Before Bed", description: "Take him out one last time before bed" },
+		{
+			time: "Before Bed",
+			description:
+				"Take him out one last time before bed. Give him a chance to poop, especially if he hasn't pooped twice yet, but if he doesn't its usually not an issue.",
+		},
 	];
 </script>
 
