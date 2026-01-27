@@ -3,9 +3,10 @@
 	import { hubertSleeping } from "$lib/assets";
 	import Section from "$lib/components/Section.svelte";
 
-	const sections: ComponentProps<typeof Section>[] = [
+	const sections: (ComponentProps<typeof Section> & { side: "left" | "right" })[] = [
 		{
 			title: "Meals",
+			side: "left",
 			items: [
 				"He doesn't have specific meal times. We leave food out for him and he eats when he wants",
 				"If he eats between 1/2 - 1 cup of food a day that's good. The more the better.",
@@ -30,6 +31,7 @@
 		},
 		{
 			title: "Walks",
+			side: "right",
 			items: [
 				"Use his blue harness for walks and clip it in the front. It helps him read the leash and stay in line",
 				"If its snowy or muddy, you can put his boots on. They can be tricky to get on so if you can't you can skip them. Just wipe his feet with a wet wipe afterwards",
@@ -44,6 +46,7 @@
 		},
 		{
 			title: "Entertainment",
+			side: "right",
 			items: [
 				{
 					content:
@@ -73,6 +76,7 @@
 		},
 		{
 			title: "Potty",
+			side: "left",
 			items: [
 				"He averages 2 poops a day, but 1 or 3 is not abnormal either",
 				{
@@ -83,28 +87,48 @@
 						"He should only have to go potty every few hours",
 					],
 				},
+				{
+					content:
+						"Feel free to use the stake and black leash so you don't need to go out with him",
+					subItems: [
+						"If he does his business and comes back he gets a treat. Otherwise don't treat him unless you want to spend all day standing by the door",
+					],
+				},
 			],
 		},
 		{
 			title: "Bedtime",
-			items: [],
+			side: "left",
+			items: ["placeholder"],
 		},
 		{
 			title: "Other",
-			items: [],
+			side: "right",
+			items: ["placeholder"],
 		},
 		{
 			title: "Understanding Hubert's Behavior",
-			items: [],
+			side: "right",
+			items: ["placeholder"],
 		},
 	];
+
+	const leftSections = sections.filter((s) => s.side === "left");
+	const rightSections = sections.filter((s) => s.side === "right");
 </script>
 
 <div class="m-4 flex flex-col items-center gap-4">
 	<img src={hubertSleeping} alt="Hubert sleeping" width={400} />
-	<div class="grid md:grid-cols-2">
-		{#each sections as section (section.title)}
-			<Section {...section} />
-		{/each}
+	<div class="grid gap-3 md:grid-cols-2">
+		<div class="flex flex-col gap-3">
+			{#each leftSections as section (section.title)}
+				<Section {...section} />
+			{/each}
+		</div>
+		<div class="flex flex-col gap-3">
+			{#each rightSections as section (section.title)}
+				<Section {...section} />
+			{/each}
+		</div>
 	</div>
 </div>
