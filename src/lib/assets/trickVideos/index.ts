@@ -1,7 +1,6 @@
 import crawl from "./crawl.mp4";
 import down from "./down.mp4";
 import highFive from "./high-five.mp4";
-import digging from "./hubert-digging.mp4";
 import paw from "./paw.mp4";
 import peek from "./peek.mp4";
 import place from "./place.mp4";
@@ -18,7 +17,6 @@ export {
 	crawl,
 	down,
 	highFive,
-	digging,
 	paw,
 	peek,
 	place,
