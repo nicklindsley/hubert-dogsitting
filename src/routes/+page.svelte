@@ -41,33 +41,6 @@
 			],
 		},
 		{
-			title: "Walks",
-			side: "right",
-			items: [
-				"He loves walks! We don’t take him on walks every day, so he doesn’t expect/need one every day. But he loves them! Normally we’ll go for a 1-2 mile walk.",
-				"Use his blue harness for walks and clip it in the front. It helps him read the leash and stay in line. However if it's cold and you put his red jacket on, you can just use the back clips on there - he might pull a little more, but he'll be fine.",
-				{
-					content:
-						"If its snowy or muddy, you can put his boots on. They can be tricky to get on so if you can't you can skip them. Just wipe his feet with a wet wipe afterwards.",
-					subItems: [
-						"If you do use his boots, he will start out walking really slow like he can’t walk in his boots. He’s faking it. Give him a minute and he’ll practically be running.",
-						`It's easiest to start putting on his front shoes. Then move onto the back. At the end, you can velcro the strap across his chest. Here's a video how to put shoes on: <a class="link" href="https://youtu.be/SRJ7irgFPy4?si=rjOUiFQha9_Gjdmm">https://youtu.be/SRJ7irgFPy4?si=rjOUiFQha9_Gjdmm</a>.`,
-					],
-				},
-				{
-					content:
-						'He\'s still a puppy and gets distracted easily. Just give him a tug and say "come on".',
-					subItems: [
-						"Depending on the day, he will stop and stare at passing cars. Again, just pull him along.",
-					],
-				},
-				"Don't be afraid to pull him along if you need to.",
-				"Watch your feet because he tends to swerve back and forth and will walk right in front of your feet.",
-				"He doesn't always pee or poop on walks.",
-				"He might get the zoomies inside when you're back from a walk.",
-			],
-		},
-		{
 			title: "Entertainment",
 			side: "right",
 			items: [
@@ -100,6 +73,33 @@
 				},
 				"If you guys are all bored and looking for something to do, Hubert loves exploring Wet Nose Bistro (over by Fleet Farm). Going there will likely tire him out from smelling everything in there!",
 				"If he gets too riled up and gets too nippy/barking, just freeze and stop playing for a moment and he'll usually settle back down",
+			],
+		},
+		{
+			title: "Walks",
+			side: "right",
+			items: [
+				"He loves walks! We don’t take him on walks every day, so he doesn’t expect/need one every day. But he loves them! Normally we’ll go for a 1-2 mile walk.",
+				"Use his blue harness for walks and clip it in the front. It helps him read the leash and stay in line. However if it's cold and you put his red jacket on, you can just use the back clips on there - he might pull a little more, but he'll be fine.",
+				{
+					content:
+						"If its snowy or muddy, you can put his boots on. They can be tricky to get on so if you can't you can skip them. Just wipe his feet with a wet wipe afterwards.",
+					subItems: [
+						"If you do use his boots, he will start out walking really slow like he can’t walk in his boots. He’s faking it. Give him a minute and he’ll practically be running.",
+						`It's easiest to start putting on his front shoes. Then move onto the back. At the end, you can velcro the strap across his chest. Here's a video how to put shoes on: <a class="link" href="https://youtu.be/SRJ7irgFPy4?si=rjOUiFQha9_Gjdmm">https://youtu.be/SRJ7irgFPy4?si=rjOUiFQha9_Gjdmm</a>.`,
+					],
+				},
+				{
+					content:
+						'He\'s still a puppy and gets distracted easily. Just give him a tug and say "come on".',
+					subItems: [
+						"Depending on the day, he will stop and stare at passing cars. Again, just pull him along.",
+					],
+				},
+				"Don't be afraid to pull him along if you need to.",
+				"Watch your feet because he tends to swerve back and forth and will walk right in front of your feet.",
+				"He doesn't always pee or poop on walks.",
+				"He might get the zoomies inside when you're back from a walk.",
 			],
 		},
 		{
@@ -166,7 +166,7 @@
 		},
 		{
 			title: "Understanding Hubert's Behavior",
-			side: "right",
+			side: "left",
 			items: [
 				`<strong>Shaking/shivering:</strong> either cold or hungry. Put a sweatshirt on him and give him some food (frozen kibble if you need him to eat).`,
 				`<strong>Sitting and staring at you:</strong> likely wants to play (or maybe snuggle). This is usually his way of begging for something. If you ignore him long enough, he might try to jump up by you or go ring the bell if he really wants to play. We continue to ignore him until he settles down - and then play :)`,
@@ -184,7 +184,7 @@
 
 <div class="m-4 flex flex-col items-center gap-4">
 	<img src={hubertSleeping} alt="Hubert sleeping" width={400} />
-	<div class="grid gap-3 md:grid-cols-1">
+	<div class="grid gap-3 md:grid-cols-2">
 		<div class="flex flex-col gap-3">
 			{#each leftSections as section (section.title)}
 				<Section {...section} />
