@@ -121,6 +121,12 @@
 			verbalCue: "Focus",
 			handCue: "Tap the temple of your head",
 		},
+		{
+			title: "Search",
+			description: "Hide a bone, treat, or toy and have him sniff it out",
+			verbalCue: "Search",
+			handCue: "With an open hand, point to the general area the thing is hidden",
+		},
 	];
 </script>
 
