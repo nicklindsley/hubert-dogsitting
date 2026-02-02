@@ -3,12 +3,18 @@
 
 :root {
 	--light-orange: #ffecd6;
+	--blue: #0000ff;
 }
 
 body {
 	background-color: var(--light-orange);
 	font-family: Roboto, sans-serif;
 	font-size: 16px;
+}
+
+.link {
+	text-decoration: underline;
+	color: var(--blue)
 }
 
 h1 {

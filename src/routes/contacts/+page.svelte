@@ -22,7 +22,7 @@
 		{#each contacts as contact (contact.name)}
 			{#if contact.link}
 				<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
-				<a class="underline" href={contact.link}>{contact.name}</a>
+				<a class="link" href={contact.link}>{contact.name}</a>
 			{:else}
 				<p>{contact.name}</p>
 			{/if}
