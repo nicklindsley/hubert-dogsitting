@@ -38,6 +38,7 @@
 <div>
 	<Section
 		title="A day in the life of Hubert"
+		subTitle="* As you probably know, it might take a couple days for him to adjust to this schedule in a new house *"
 		items={events.map((e) => ({
 			content: `<span><strong>${e.time}</strong> – ${e.description}</span>`,
 			subItems: e.subItems,

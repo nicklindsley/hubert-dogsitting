@@ -1,6 +1,7 @@
 <script lang="ts">
 	type SectionProps = {
 		title: string;
+		subTitle?: string;
 		items: (
 			| string
 			| {
@@ -10,11 +11,14 @@
 		)[];
 	};
 
-	const { title, items }: SectionProps = $props();
+	const { title, subTitle, items }: SectionProps = $props();
 </script>
 
 <div class="m-2 flex flex-col gap-2">
-	<h5 class="flex justify-center rounded-4xl border-2 px-4 py-2">{title.toUpperCase()}</h5>
+	<h4 class="flex justify-center rounded-4xl border-2 px-4 py-2">{title.toUpperCase()}</h4>
+	{#if subTitle}
+		<h6 class="flex justify-center">{subTitle}</h6>
+	{/if}
 	<ul class="mx-8 flex list-disc flex-col">
 		{#each items as item, index (index)}
 			<li>

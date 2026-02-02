@@ -13,17 +13,17 @@
 </script>
 
 <div class="sticky top-0 z-50 flex min-h-10 w-full flex-col items-center bg-orange-200">
-	<h3>Hubert Dogsitting Guide</h3>
+	<h1>Hubert Dogsitting Guide</h1>
 	<div class="flex gap-5">
 		{#each links as link (link.label)}
-			<h6>
+			<h5>
 				<a
 					class={`hover:underline ${currentRoute === link.route ? "font-bold" : ""}`}
 					href={resolve(link.route)}
 				>
 					{link.label}
 				</a>
-			</h6>
+			</h5>
 		{/each}
 	</div>
 </div>
