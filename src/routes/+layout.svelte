@@ -10,6 +10,7 @@
 		{ label: "Home", route: "/" },
 		{ label: "Schedule", route: "/schedule" },
 		{ label: "Tricks", route: "/tricks" },
+		{ label: "Play", route: "/play" },
 		{ label: "Contacts", route: "/contacts" },
 	];
 </script>

@@ -21,6 +21,14 @@
 			],
 		},
 		{
+			time: "9 AM - 5 PM",
+			description: "He's generally pretty self-sufficient while we're working.",
+			subItems: [
+				"He'll typically sleep a good portion of the day",
+				"He may request a couple breaks for a 5 min play session",
+			],
+		},
+		{
 			time: "5 - 10 PM",
 			description:
 				"Dinner. He eats very late sometimes, even right before bed. It never seems to affect him or cause him to get up in the middle of the night so we let him eat.",
@@ -33,9 +41,10 @@
 		{
 			time: "Before Bed",
 			description:
-				"Take him out one last time before bed. Give him a chance to poop, especially if he hasn't pooped twice yet, but if he doesn't its usually not an issue.",
+				"Take him out one last time before bed. Give him a chance to poop, especially if he hasn't pooped in the last half od the day, but if he doesn't its usually not an issue.",
 			subItems: [
-				`<strong>**</strong> The first night, give him plenty of time to explore your bedroom and guide him up and down the ottoman into your bed. He'll most likely want to explore everything before going to bed. If you lay in bed, eventually he will figure out it's not play time and come join you!`,
+				"It very rare that he needs to go out in the middle of the night. So if he gets up just ignore him and",
+				`<strong>**</strong> The first night, give him some time to explore your bedroom and guide him up and down the ottoman into your bed. He'll most likely want to sniff everything before going to bed. If you lay in bed, eventually he will figure out it's not playtime and come join you!`,
 			],
 		},
 	];
