@@ -28,7 +28,7 @@
 				subItems: [
 					`Tell him to "wait" or go to "place"`,
 					"Go hide somewhere in the house",
-					`Yell "Huber come find me" and let him search for you`,
+					`Yell "Hubert come find me" and let him search for you`,
 				],
 			},
 			{
