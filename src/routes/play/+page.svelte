@@ -67,6 +67,14 @@
 					"He can be very loud while working on this as he scratches away",
 				],
 			},
+			{
+				content: "Green Ball with Chipmunks",
+				subItems: [
+					"Sprinkle a treat and some kibble in each hole",
+					"Stuff the little chipmunks into each hole to block it",
+					"He gets this one pretty quick but he loves it",
+				],
+			},
 		]}
 	/>
 </div>
