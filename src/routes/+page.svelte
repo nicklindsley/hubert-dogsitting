@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { ComponentProps } from "svelte";
-	import { hubertSleeping } from "$lib/assets";
+	import { blanketBed } from "$lib/assets";
 	import Section from "$lib/components/Section.svelte";
 
 	const sections: (ComponentProps<typeof Section> & { side: "left" | "right" })[] = [
@@ -135,7 +135,7 @@
 						"Put the black/white blanket on your bed and bunch the edges up to create a donut bed. He normally sleeps in that by our legs, but place it where ever you like.",
 					subItems: [
 						"If he gets cold, he might come snuggle up by you. Just move him back to his bed and cover him up if you don’t want this.",
-						`<img src="${hubertSleeping}" width="200" />`,
+						`<img src="${blanketBed}" width="200" />`,
 					],
 				},
 				"Occasionally he will wake up, shake off, come sniff us, and go back to bed. Don’t know why he does this, but it doesn’t mean anything.",
@@ -148,6 +148,14 @@
 				},
 				"We usually take his collar off before bed.",
 				"He should adapt his sleep schedule to whatever you want, so feel free to get up or go to bed at a different time.",
+				{
+					content:
+						"If he's licking his thighs/crotch a lot at night you can put his black body suit on before bed",
+					subItems: [
+						"Put his front legs through the holes, velcro along his back, and button behind his legs around his tail",
+						"He's not a fan of wearing it and he'll move around initially to get comfortable in it, but he should sleep just fine",
+					],
+				},
 			],
 		},
 		{
@@ -165,6 +173,7 @@
 			title: "Other",
 			side: "right",
 			items: [
+				"The skin on his thighs is dry and he's been licking it lately, which just makes it worse. Try to stop him from doing this if you notice it",
 				"Hubert loves shoulder and butt scratches - sometimes he will just melt if you scratch in the right place :) He also loves licking us - he will lick you as long as you let him.",
 				"Hubert gets boogers in his eyes, especially in the morning. He hates getting them taken out. Don’t worry about them!",
 				"We gave you a few used t-shirts of ours. Break a new one out every couple days so Hubert has some fresh scents of ours.",
@@ -190,18 +199,18 @@
 						"He likes to look outside for a little bit and then he'll lay down and nap",
 					],
 				},
+				"Hubert loves classic rock music.",
 			],
 		},
 		{
 			title: "Understanding Hubert's Behavior",
-			side: "left",
+			side: "right",
 			items: [
 				`<strong>Shaking/shivering:</strong> either cold or not feeling well. Put a sweatshirt on him and give him some food (frozen kibble if you need him to eat).`,
 				`<strong>Sitting and staring at you:</strong> likely wants to play (or maybe snuggle). This is his way of begging for something. If you ignore him long enough, he might try to jump up by you or go ring the bell if he really wants to play. We continue to ignore him until he settles down - and then play :)`,
 				`<strong>Waiting by the door:</strong> might need to go outside or wants to go outside and play`,
 				`If he opens his mouth and rubs his teeth against your hand, he wants to wrestle and be pushed around. He loves rough play.`,
 				`If he seems sassy like he’s barking at things or continually ringing the bell or just being annoying, he likely needs some mental stimulation and or a nap. We’d suggest spending a few minutes doing some tricks or giving him a puzzle with some treats and then putting him in timeout in his bed (the "place" command).`,
-				`Hubert loves classic rock music.`,
 			],
 		},
 	];

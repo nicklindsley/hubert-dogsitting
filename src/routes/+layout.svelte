@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { ComponentProps } from "svelte";
 	import "./layout.css";
-	import favicon from "$lib/assets/hubert-favicon.png";
+	import { favicon } from "$lib/assets";
 	import NavBar from "$lib/components/NavBar.svelte";
 
 	const { children } = $props();
