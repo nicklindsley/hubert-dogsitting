@@ -5,12 +5,12 @@
 	const contacts: Contact[] = [
 		{ name: "Nick", phone: "920-264-6984" },
 		{ name: "Michaela", phone: "920-530-7838" },
-		// { name: "Penny McLeod", phone: "920-819-5517" },
+		{ name: "Penny McLeod", phone: "920-819-5517" },
 		{ name: "Sue Lindsley", phone: "920-819-1768" },
 		{
-			name: "Animal House (Vet)",
-			phone: "920-465-4629",
-			link: "https://www.animalhousegreenbay.com/service/urgent-care-2/",
+			name: "Viva Vet Medical Center (Vet)",
+			phone: "920-336-9595",
+			link: "https://www.vivavetmc.com/contact",
 		},
 	];
 </script>
@@ -30,5 +30,4 @@
 		{/each}
 	</div>
 	<p class="mt-3 italic">*Call Nick in case of emergency 24/7*</p>
-	<p class="mt-3 italic">Sue will be available in Green Bay if needed</p>
 </div>
